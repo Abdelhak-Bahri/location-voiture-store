@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name=author content="bahri abdelhak">
+<meta name=mail content="ca_bahri@esi.dz">
+<title>Location de véhicules</title>
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<!--<script type="text/javascript" src="scripts/script.js" ></script>-->
+	
+</head>
+<body>
+<div id="mainContainer">
+	<header>
+		<h1>AgenceXYZ de location de voiture</h1>
+		<img src="img/LogoWA.jpg" />
+	</header>
+	<article>
+	<div id="sections">
+		<section id="minicitadine">
+		<a href=javascript:show(1)>
+			<img class="imageVehicule" src="img/Mini-citadine.jpg" alt="minicitadine" />
+			<h2>minicitadine</h2>
+		</a>
+		</section>
+		<section id="citadine">
+		<a href=javascript:show(2)>
+			<img class="imageVehicule" src="img/Citadine.jpg" alt="Citadine" />
+			<h2>Citadine</h2>
+		</a>
+		</section>
+		<section id="berline">
+		<a href=javascript:show(3)>
+			<img class="imageVehicule" src="img/Berline.jpg" alt="berline" />
+			<h2>berline</h2>
+		</a>
+		</section>
+		<section id="utilitaire">
+		<a href=javascript:show(4)>
+			<img class="imageVehicule" src="img/Utilitaire.jpg" alt="Utilitaire" />
+			<h2 >Utilitaire</h2>
+		</a>
+		</section>
+		</div>
+		
+	</article>
+	<footer>
+		contactez nous via  : <a href="mailto:ca_bahri@esi.dz"> email </a>
+	</footer>
+	<div id="div1" class=details>
+		
+		<div class=cont>
+		<h2>minicitadine<br> puissance: 90 <br> energie : escence <br> prix:2000DA/j</h2>
+		<input type=button value="hide" onclick="hideAll()"></div>
+		<img class="imageVehicule" src="img/Mini-citadine.jpg" alt="minicitadine" />
+	</div>
+	<div id="div2" class=details>
+		<div class=cont>
+		<h2>Citadine<br> puissance: 90 <br> energie : escence <br> prix:2000DA/j</h2>
+		<input type=button value="hide" onclick="hideAll()"></div>
+		<img class="imageVehicule" src="img/Citadine.jpg" alt="Citadine" />
+			
+	</div>
+	<div id="div3" class=details>
+		<div class=cont>
+		<h2>berline<br> puissance: 90 <br> energie : escence <br> prix:2000DA/j</h2>
+		<input type=button value="hide" onclick="hideAll()"></div>
+		<img class="imageVehicule" src="img/Berline.jpg" alt="berline" />
+			
+	</div>
+	<div id="div4" class=details>
+		<div class=cont>
+		<h2 >Utilitaire<br> puissance: 90 <br> energie : escence <br> prix:2000DA/j</h2>
+		<input type=button value="hide" onclick="hideAll()"></div>
+		<img class="imageVehicule" src="img/Utilitaire.jpg" alt="Utilitaire" />
+			
+	</div>
+</div>
+
+<script type="text/javascript" >
+	function show(x){
+	switch(x){
+	case 1:
+	hideAll();
+		var div1 = document.getElementById("div1");
+		div1.style.right=0 + 'px'; 
+		break;
+	case 2:
+	hideAll();
+		var div2 = document.getElementById("div2");
+		div2.style.right=0 + 'px'; 
+		break;
+	case 3:
+	hideAll();
+		var div3 = document.getElementById("div3");
+		div3.style.right=0 + 'px'; 
+		break;
+	case 4:
+	hideAll();
+		var div4 = document.getElementById("div4");
+		div4.style.right=0 + 'px'; 
+		break;
+	}
+	}
+		function hide(x){
+			switch(x){
+			case 1:
+				var div1 = document.getElementById("div1");
+				div1.style.right=-320 + 'px'; 
+				break;
+			case 2:
+				var div2 = document.getElementById("div2");
+				div2.style.right=-320 + 'px'; 
+				break;
+			case 3:
+				var div3 = document.getElementById("div3");
+				div3.style.right=-320 + 'px'; 
+				break;
+			case 4:
+				var div4 = document.getElementById("div4");
+				div4.style.right=-320 + 'px'; 
+				break;
+			}
+	
+		
+	}
+	function hideAll(){
+	for(var i =1; i<5;i++){
+	hide(i);
+	}
+	}
+</script>
+</body>
+</html>
