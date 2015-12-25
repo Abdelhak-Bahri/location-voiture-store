@@ -1,0 +1,106 @@
+#mainContainer{
+border: 1px dashed blue;
+margin: 50px;
+padding:25px;
+text-align:center;
+}
+/*header*/
+header{
+	text-align:center;
+	border: #888888 1px dotted;
+ }
+header h1{
+	font-size:5em;
+}
+header img{
+	width:100%;
+}
+/*Article*/
+article{
+	text-align:center;
+	border: #888888 1px solid;
+	display:block;
+	text-align:center;
+	vertical-align:top;
+	overflow: hidden;
+	box-sizing: border-box;
+	padding:2%;
+}
+
+/*sections*/
+section{
+	height:400px;
+  margin:2%;
+	box-sizing: border-box;
+	background-color:#EEE;
+	min-width:250px;
+	max-width:400px;
+}
+
+section:nth-child(2n+1){
+	float:left;
+	clear:left;
+}
+section:nth-child(2n){
+	float:left;
+}
+
+section .imageVehicule{
+	width:100%;
+	display:block;
+	max-height:300px;
+	min-height:300px;
+}
+
+section:hover{
+	box-shadow: 0px 10px 10px #888888;
+}
+
+#sections{
+	text-align:center;
+	vertical-align:center;
+	width:100%;
+}
+
+/*footer*/
+footer{
+	display:block;
+	text-align:center;
+	border: #888888 1px dotted;
+	clear:left;
+	float:left;
+	width:100%;
+	
+}
+
+/*messages de détails*/
+.details{
+	min-width:320px;
+	background-color:#EEE;
+	position:fixed;
+	right:-320px;
+	top:200px;
+	transition: right,box-shadow;
+	transition-duration:4s;
+}
+.details:hover{
+	position:fixed;
+	right:-320px;
+	box-shadow: 0px 5px  30px #333;
+}
+.details .imageVehicule{
+	width:150px;
+	display:block;
+	max-width:300px;
+	max-height:300px;
+	min-height:300px;
+	float:right;
+}
+.details .cont{
+	box-sizing:border-box;
+	width:150px;
+	float:left;
+}
+a{
+	color:#000;
+}
